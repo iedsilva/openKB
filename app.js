@@ -12,7 +12,10 @@ const fs = require('fs');
 const Nedb_store = require('nedb-session-store')(session);
 const remove_md = require('remove-markdown');
 const common = require('./routes/common');
-const config = common.read_config();
+let config = common.read_config();
+if(config.database.type === 'mongodb') {
+    config.database.connection_string = process.env.database;
+}
 const MongoClient = require('mongodb').MongoClient;
 const expstate = require('express-state');
 const compression = require('compression');
