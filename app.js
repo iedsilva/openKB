@@ -13,8 +13,8 @@ const Nedb_store = require('nedb-session-store')(session);
 const remove_md = require('remove-markdown');
 const common = require('./routes/common');
 let config = common.read_config();
-if(config.database.type === 'mongodb') {
-    config.database.connection_string = process.env.database;
+if(config.settings.database.type === 'mongodb') {
+    config.settings.database.connection_string = process.env.database;
 }
 const MongoClient = require('mongodb').MongoClient;
 const expstate = require('express-state');
