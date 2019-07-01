@@ -2,15 +2,15 @@
 	"settings": {
 		"route_name": "kb",
 		"num_top_results": "10",
-		"date_format": "DD/MM/YYYY h:mmA",
-		"show_view_count": true,
+		"date_format": "DD/MM/YYYY",
+		"show_view_count": false,
 		"update_view_count_logged_in": false,
 		"show_published_date": false,
 		"sort_by": {
 			"field": "kb_viewcount",
 			"order": -1
 		},
-		"website_title": "openKB",
+		"website_title": "EagleMed - Docs",
 		"show_featured_articles": false,
 		"show_featured_in_article": false,
 		"featured_articles_count": "4",
@@ -22,7 +22,7 @@
 		"mathjax": false,
 		"mathjax_input_mode": "TeX-MML-AM_CHTML",
 		"app_context": "",
-		"links_blank_page": true,
+		"links_blank_page": false,
 		"database": {
 			"type": "mongodb"
 		},
