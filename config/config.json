@@ -1,6 +1,6 @@
 {
 	"settings": {
-		"route_name": "kb",
+		"route_name": "item",
 		"num_top_results": "10",
 		"date_format": "DD/MM/YYYY",
 		"show_view_count": false,
@@ -34,7 +34,7 @@
 		"typeahead_search": true,
 		"index_article_body": false,
 		"enable_spellchecker": true,
-		"show_website_logo": true,
+		"show_website_logo": false,
 		"website_description": "EagleMed",
 		"article_versioning": false,
 		"api_auth_token": "",
